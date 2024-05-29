@@ -12,7 +12,7 @@ app.use(session({
 }));
 app.use(parser.urlencoded({extended: true}))
 
-app.use(express.static("public"))
+app.use(express.static("public/dist"))
 app.use('/account', account);
 
 
